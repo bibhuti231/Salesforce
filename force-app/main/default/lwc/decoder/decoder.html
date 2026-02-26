@@ -1,0 +1,17 @@
+<template>
+    <p>{user.name}</p>
+    <button onclick={changename}>change name</button>
+    <lightning-input type="checkbox" label="show details" onchange={handlechange}></lightning-input>
+    <div class="myclass" lwc:if={aredetailvisible}>this is the detail</div>
+    <div lwc:else>details are not avaliable</div>
+    <c-child message="sadf"></c-child>
+    <template  iterator:contact={contacts}>
+        <div key={contact.value.id}>
+            <p>{contact.value.id}</p>
+            <p>`{contact.value.firstname} {contact.value.lastname}`</p>
+            <p>{contact.value.age}</p>
+        </div>
+        
+    </template>
+    <c-child lwc:spread={user}></c-child>
+</template>
