@@ -5,11 +5,11 @@ export default class Decoder extends LightningElement {
         name: 'john',
         age: 25,
     };
-    aredetailvisible=false;
+    aredetailvisible=false; 
     handlechange(event){
         this.aredetailvisible=event.target.checked;
     }
-    changename() {
+    get changename() {
         this.user.name = 'bibhuti';
     }
     o
