@@ -1,7 +1,15 @@
 <template>
     <div class="video">
+        <div class="video">
         <video src={vidUrl} >bear walking</video>
         <button onclick={videoPlay}>play</button>
         <button onclick={videoPause}>pause</button>
+    </div>
+    <c-child>
+       
+        <span slot="fn">bibhuti</span>
+        <span slot="ln">behera</span>
+    </c-child>
+
     </div>
 </template>

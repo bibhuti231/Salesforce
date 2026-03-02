@@ -1,18 +1,29 @@
 import { LightningElement,track,api} from 'lwc';
 
 export default class Decoder extends LightningElement {
-        user = {
+         user = {
         name: 'john',
         age: 25,
     };
     aredetailvisible=false; 
+    // todoApp.js
+// @api myItem = this.template.querySelector("c-child").name;
+    myItem;
+    hasRendered = false;
+
+    
     handlechange(event){
         this.aredetailvisible=event.target.checked;
     }
-    get changename() {
-        this.user.name = 'bibhuti';
+    changename() {
+        this.user = {
+        ...this.user,
+        name: 'bibhuti'
+    };
+        
     }
-    o
+    @api hisname;
+     
     get contacts(){
         let arr=[
             {
