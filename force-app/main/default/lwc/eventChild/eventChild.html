@@ -1,11 +1,17 @@
 <template>
-    <lightning-card title="event child"></lightning-card>
+    <!-- <lightning-card title="event child"></lightning-card>
     <lightning-layout>
         <lightning-layout-item>
+        <p>page{page}</p>
             <lightning-button label="previous" onclick={previousHandler}></lightning-button>
         </lightning-layout-item>
         <lightning-layout-item>
             <lightning-button label="next" onclick={nextHandler}></lightning-button>
         </lightning-layout-item>
     </lightning-layout>
+    <input type="text" value={myvalue} onchange={handleChange}>
+    <p>the current value is: {myvalue}</p> -->
+    <p> name is {object.myname}</p>
+    <p>age is {object.age}</p>
+    <lightning-button label="click me" onclick={nameHandler}></lightning-button>
 </template>
